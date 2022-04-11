@@ -1,4 +1,4 @@
-package com.example.vshark;
+package com.syndicate.vshark;
 
 import org.junit.Test;
 
