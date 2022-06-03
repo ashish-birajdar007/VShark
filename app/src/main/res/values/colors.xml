@@ -6,5 +6,11 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+
+    <!--    Shark Tank India Colors-->
+    <color name="yellow_shade">#FBF331</color>
+    <color name="blue_shade_1">#008AB7</color>
+    <color name="blue_shade_2">#004182</color>
     <color name="white">#FFFFFFFF</color>
+    <!--    Shark Tank India Colors-->
 </resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "498365788848",
+    "project_id": "vshark-791ec",
+    "storage_bucket": "vshark-791ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498365788848:android:056d198e04a4ec63ee4175",
+        "android_client_info": {
+          "package_name": "com.syndicate.vshark"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498365788848-2gfvot13851spl1qhroooh7ba8spl1oq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTYJeMA8z78dXi2P91Ky0Ob6oNk4iDbEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "498365788848-2gfvot13851spl1qhroooh7ba8spl1oq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
