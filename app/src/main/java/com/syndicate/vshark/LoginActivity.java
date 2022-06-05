@@ -1,8 +1,5 @@
 package com.syndicate.vshark;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -11,6 +8,9 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -66,7 +66,7 @@ public class LoginActivity extends AppCompatActivity {
                                 finish();
                             }else{
                                 loadingPB.setVisibility(View.GONE);
-                                Toast.makeText(LoginActivity.this, "Failed To Login", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(LoginActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             }
                         }
                     });

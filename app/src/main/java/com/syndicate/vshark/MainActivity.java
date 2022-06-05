@@ -1,15 +1,25 @@
 package com.syndicate.vshark;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.firebase.auth.FirebaseAuth;
+
+import org.jitsi.meet.sdk.JitsiMeet;
+import org.jitsi.meet.sdk.JitsiMeetActivity;
+import org.jitsi.meet.sdk.JitsiMeetConferenceOptions;
+
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
@@ -18,6 +28,38 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mAuth = FirebaseAuth.getInstance();
+        Button createMeetBtn = findViewById(R.id.create_meet_btn);
+        Button joinMeetBtn = findViewById(R.id.join_btn1);
+        EditText meetingCode = findViewById(R.id.meeting_code_box);
+        URL serverURL = null;
+
+
+        try {
+            serverURL = new URL("https://meet.jit.si");
+            JitsiMeetConferenceOptions defaultOptions = new JitsiMeetConferenceOptions.Builder()
+                    .setServerURL(serverURL).build();
+            JitsiMeet.setDefaultConferenceOptions(defaultOptions);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+
+
+        createMeetBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, CreateMeetActivity.class));
+            }
+        });
+
+        joinMeetBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                JitsiMeetConferenceOptions options = new JitsiMeetConferenceOptions.Builder()
+                        .setRoom(meetingCode.getText().toString()).build();
+                JitsiMeetActivity.launch(MainActivity.this,options);
+            }
+        });
+
     }
 
     @Override

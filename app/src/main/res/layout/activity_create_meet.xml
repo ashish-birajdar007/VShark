@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/blue_shade_1">
+    tools:context=".CreateMeetActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -26,30 +25,18 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp">
 
-            <com.google.android.material.textfield.TextInputLayout
+            <TextView
+                android:id="@+id/meeting_code"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:hint="Enter Meeting Code"
-                style="@style/TextInputLayout"
-                android:padding="5dp"
-                android:textColorHint="@color/blue_shade_1"
-                app:hintTextColor="@color/blue_shade_1">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/meeting_code_box"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:importantForAutofill="no"
-                    android:inputType="text"
-                    android:textColor="@color/blue_shade_1"
-                    android:textColorHint="@color/white"
-                    android:textSize="14sp"/>
-
-            </com.google.android.material.textfield.TextInputLayout>
+                android:text="Code123"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
 
             <Button
-                android:id="@+id/join_btn1"
+                android:id="@+id/join_btn2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -57,16 +44,17 @@
                 android:text="Join"/>
 
             <Button
-                android:id="@+id/create_meet_btn"
+                android:id="@+id/share_code_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:padding="5dp"
-                android:text="Create Meeting"/>
+                android:text="Share Code"/>
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
