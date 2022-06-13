@@ -78,6 +78,7 @@
         android:textAllCaps="false"
         android:textAlignment="center"
         android:gravity="center"
+        android:textStyle="italic"
         android:layout_below="@id/idBtnLogin"
         android:layout_marginTop="30dp"
         android:textSize="18sp"/>

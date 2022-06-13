@@ -3,4 +3,8 @@
 
     <item android:id="@+id/idLogOut"
         android:title="Log Out"/>
+    <item android:id="@+id/addUserProfile"
+        android:title="Edit/Add User Profile"/>
+    <item android:id="@+id/userProfile"
+        android:title="User Profile"/>
 </menu>
