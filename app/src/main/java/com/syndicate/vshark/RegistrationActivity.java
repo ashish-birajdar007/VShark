@@ -45,23 +45,33 @@ public class RegistrationActivity extends AppCompatActivity {
             }
         });
 
-        String userName = userNameEdt.getText().toString();
-        String email = emailEdt.getText().toString();
-        String pwd = pwdEdt.getText().toString();
-
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 loadingPB.setVisibility(View.VISIBLE);
 
-                if(TextUtils.isEmpty(userName) || TextUtils.isEmpty(email) || TextUtils.isEmpty(pwd)){
-                    Toast.makeText(RegistrationActivity.this, "Please Enter Credentials", Toast.LENGTH_SHORT).show();
-                }else{
+                String userName = userNameEdt.getText().toString();
+                String email = emailEdt.getText().toString();
+                String pwd = pwdEdt.getText().toString();
+
+                if(TextUtils.isEmpty(userName)){
+                    loadingPB.setVisibility(View.GONE);
+                    Toast.makeText(RegistrationActivity.this, "Please Enter User Name", Toast.LENGTH_SHORT).show();
+                }else if(TextUtils.isEmpty(email)){
+                    loadingPB.setVisibility(View.GONE);
+                    Toast.makeText(RegistrationActivity.this, "Please Enter Email", Toast.LENGTH_SHORT).show();
+                }else if(TextUtils.isEmpty(pwd)){
+                    loadingPB.setVisibility(View.GONE);
+                    Toast.makeText(RegistrationActivity.this, "Please Enter Password", Toast.LENGTH_SHORT).show();
+                } else{
                     mAuth.createUserWithEmailAndPassword(email,pwd).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){
+                                Toast.makeText(RegistrationActivity.this, "Registration Succesfull!!!", Toast.LENGTH_SHORT).show();
                                 loadingPB.setVisibility(View.GONE);
+                                Intent i = new Intent(RegistrationActivity.this, LoginActivity.class);
+                                startActivity(i);
                             }else{
                                 loadingPB.setVisibility(View.GONE);
                                 Toast.makeText(RegistrationActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();

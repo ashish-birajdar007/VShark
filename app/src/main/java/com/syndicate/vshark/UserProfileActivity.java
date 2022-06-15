@@ -1,12 +1,16 @@
 package com.syndicate.vshark;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
@@ -19,6 +23,7 @@ public class UserProfileActivity extends AppCompatActivity {
     private FirebaseFirestore database;
     private FirebaseAuth fAuth;
     private ProgressBar progressBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +43,15 @@ public class UserProfileActivity extends AppCompatActivity {
                 progressBar.setVisibility(View.GONE);
                 userProfile.setText(user.toString());
 
+            }
+        });
+
+        docRef.get().addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(UserProfileActivity.this, "User Profile Either Not Entered\n Or Failed To Retrieve", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(UserProfileActivity.this, AddUserProfileActivity.class);
+                startActivity(i);
             }
         });
     }
