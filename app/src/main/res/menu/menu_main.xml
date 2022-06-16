@@ -2,15 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/idLogOut"
-        android:title="Log Out"/>
     <item android:id="@+id/addUserProfile"
-        android:title="Edit/Add User Profile"/>
+        android:title="Edit My Company Profile"/>
     <item android:id="@+id/userProfile"
-        android:title="User Profile"/>
+        android:title="View My Company Profile"/>
+    <item android:id="@+id/viewPitcherProfile"
+        android:title="View Pitcher Profile"/>
     <item
         android:id="@+id/share"
         android:title="Share"
         android:icon="@drawable/ic_share"
         app:showAsAction="always"/>
+    <item android:id="@+id/idLogOut"
+        android:title="Log Out"/>
 </menu>

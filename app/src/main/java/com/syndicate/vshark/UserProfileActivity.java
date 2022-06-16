@@ -42,11 +42,8 @@ public class UserProfileActivity extends AppCompatActivity {
                 UserProfile user = documentSnapshot.toObject(UserProfile.class);
                 progressBar.setVisibility(View.GONE);
                 userProfile.setText(user.toString());
-
             }
-        });
-
-        docRef.get().addOnFailureListener(new OnFailureListener() {
+        }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
                 Toast.makeText(UserProfileActivity.this, "User Profile Either Not Entered\n Or Failed To Retrieve", Toast.LENGTH_SHORT).show();

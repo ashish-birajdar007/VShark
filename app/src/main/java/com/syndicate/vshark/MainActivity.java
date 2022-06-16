@@ -84,6 +84,10 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.userProfile:
                 startActivity(new Intent(MainActivity.this, UserProfileActivity.class));
+                return true;
+            case R.id.viewPitcherProfile:
+                startActivity(new Intent(MainActivity.this, viewPitcherProfile.class));
+                return true;
             case R.id.share:
                 Intent ip = new Intent(Intent.ACTION_SEND);
                 ip.setType("text/plain");

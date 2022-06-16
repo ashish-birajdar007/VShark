@@ -9,7 +9,7 @@ public class User {
 
     }
 
-    public User(String userName, String pass, String email, String companyName, String productDetails, String ask, String equity, String companyValuation, String lastYearSales, String priorInvestorName, String priorInvestorInvestment, String priorInvestorStake, String netProfit) {
+    public User(String userName, String pass) {
         this.userName = userName;
         this.pass = pass;
         this.email = email;
