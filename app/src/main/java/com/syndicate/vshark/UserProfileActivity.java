@@ -24,12 +24,25 @@ public class UserProfileActivity extends AppCompatActivity {
     private FirebaseAuth fAuth;
     private ProgressBar progressBar;
 
+    private TextView companyName, productDetails, ask, equity, companyValuation, lastYearSales, priorInvestorName, priorInvestorInvestment, priorInvestorStake, netProfit;
+    private void init(){
+        companyName = findViewById(R.id.upTVcompanyName);
+        productDetails = findViewById(R.id.upTVproductDetails);
+        ask = findViewById(R.id.upTVASK);
+        equity = findViewById(R.id.upTVEquity);
+        companyValuation = findViewById(R.id.upTVvaluation);
+        lastYearSales = findViewById(R.id.upTVlastYearSales);
+        priorInvestorName = findViewById(R.id.upTVpriorInvestorName);
+        priorInvestorInvestment = findViewById(R.id.upTVpriorInvestorInvestment);
+        priorInvestorStake = findViewById(R.id.upTVpriorInvestorStake);
+        netProfit = findViewById(R.id.upTVnetProfit);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
-        userProfile = findViewById(R.id.user_profile);
-        progressBar = findViewById(R.id.progress_bar_user_profile);
+        init();
 
         database = FirebaseFirestore.getInstance();
         fAuth = FirebaseAuth.getInstance();
@@ -39,9 +52,16 @@ public class UserProfileActivity extends AppCompatActivity {
         docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
-                UserProfile user = documentSnapshot.toObject(UserProfile.class);
-                progressBar.setVisibility(View.GONE);
-                userProfile.setText(user.toString());
+                UserProfile userProfile = documentSnapshot.toObject(UserProfile.class);
+                companyName.setText(userProfile.getCompanyName());
+                productDetails.setText(userProfile.getProductDetails());
+                ask.setText(userProfile.getAsk());
+                equity.setText(userProfile.getEquity());
+                companyValuation.setText(userProfile.getCompanyValuation());
+                lastYearSales.setText(userProfile.getLastYearSales());
+                priorInvestorName.setText(userProfile.getPriorInvestorName());
+                priorInvestorInvestment.setText(userProfile.getPriorInvestorInvestment());
+                priorInvestorStake.setText(userProfile.getPriorInvestorStake());
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override

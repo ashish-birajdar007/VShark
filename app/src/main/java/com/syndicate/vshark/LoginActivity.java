@@ -23,7 +23,7 @@ public class LoginActivity extends AppCompatActivity {
     private TextInputEditText userNameEdt, pwdEdt;
     private Button loginBtn;
     private ProgressBar loadingPB;
-    private TextView registerTV;
+    private TextView registerTV, forgotPasswordTV;
     private FirebaseAuth mAuth;
 
     @Override
@@ -35,6 +35,7 @@ public class LoginActivity extends AppCompatActivity {
         loadingPB = findViewById(R.id.idPBLoading);
         loginBtn = findViewById(R.id.idBtnLogin);
         registerTV = findViewById(R.id.idTVRegister);
+        forgotPasswordTV = findViewById(R.id.idTVForgotPassword);
         mAuth = FirebaseAuth.getInstance();
 
         registerTV.setOnClickListener(new View.OnClickListener() {
@@ -44,6 +45,15 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        forgotPasswordTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginActivity.this,ForgotPassword.class));
+                finish();
+            }
+        });
+
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

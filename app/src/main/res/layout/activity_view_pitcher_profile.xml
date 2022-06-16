@@ -59,22 +59,307 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="5dp"
+            >
 
-            <TextView
-                android:paddingTop="10dp"
-                android:id="@+id/TVpitcher_profile"
+<!--            <TextView-->
+<!--                android:paddingTop="10dp"-->
+<!--                android:id="@+id/TVpitcher_profile"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Nothing to Show"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="25dp"-->
+<!--                android:layout_margin="5dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.5"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Nothing to Show"
-                android:textColor="@color/black"
-                android:textSize="25dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="@color/blue_shade_1"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="Company Name : "
+                    android:layout_weight="1"
+                    android:textColor="@color/yellow_shade"
+                    />
+                <TextView
+                    android:id="@+id/TVcompanyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="NA"
+                    android:layout_weight="1"
+                    android:textColor="@color/yellow_shade"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:background="@color/teal_200"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="Product Details : "
+                    android:textColor="@color/white"
+                    />
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/TVproductDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:inputType="textMultiLine"
+                            android:textSize="25dp"
+                            android:text="NA"
+                            android:textColor="@color/blue_shade_2"
+                            />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="@color/blue_shade_1"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="ASK (Lakh Rs) : "
+                    android:layout_weight="1"
+                    android:textColor="@color/yellow_shade"
+                    />
+                <TextView
+                    android:id="@+id/TVASK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="NA"
+                    android:layout_weight="1"
+                    android:textColor="@color/yellow_shade"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="@color/teal_200"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="Equity % : "
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    android:id="@+id/TVEquity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textSize="25dp"
+                    android:layout_weight="1"
+                    android:text="NA"
+                    android:textColor="@color/blue_shade_2"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="@color/blue_shade_1"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="Company Valuation : "
+                    android:layout_weight="0.5"
+                    android:textColor="@color/yellow_shade"
+                    />
+                <TextView
+                    android:id="@+id/TVvaluation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="NA"
+                    android:layout_weight="1"
+                    android:textColor="@color/yellow_shade"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="@color/teal_200"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="Last Year Sales (Lakh Rs) : "
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    android:id="@+id/TVlastYearSales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textSize="25dp"
+                    android:layout_weight="1"
+                    android:text="NA"
+                    android:textColor="@color/blue_shade_2"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="@color/blue_shade_1"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="Prior Investor : "
+                    android:layout_weight="1"
+                    android:textColor="@color/yellow_shade"
+                    />
+                <TextView
+                    android:id="@+id/TVpriorInvestorName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="NA"
+                    android:layout_weight="1"
+                    android:textColor="@color/yellow_shade"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@color/teal_200"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Prior Investor Investment (Lakh Rs) : "
+                    android:layout_weight="0.6"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    android:id="@+id/TVpriorInvestorInvestment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textSize="25dp"
+                    android:layout_weight="1"
+                    android:text="NA"
+                    android:textColor="@color/blue_shade_2"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@color/blue_shade_1"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Prior Investor Stake %: "
+                    android:layout_weight="0.5"
+                    android:textColor="@color/yellow_shade"
+                    />
+                <TextView
+                    android:id="@+id/TVpriorInvestorStake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="NA"
+                    android:layout_weight="1"
+                    android:textColor="@color/yellow_shade"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="@color/teal_200"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="Net Profit (Lakh Rs) : "
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    android:id="@+id/TVnetProfit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textSize="25dp"
+                    android:layout_weight="1"
+                    android:text="NA"
+                    android:textColor="@color/blue_shade_2"
+                    />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 

@@ -59,7 +59,7 @@
                 android:id="@+id/product_details"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:inputType="text"
+                android:inputType="textMultiLine"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -72,10 +72,10 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/TILAsk"
                 style="@style/TextInputLayout"
-                android:layout_width="180dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
                 android:hint="ASK (Lakh Rs)"
                 android:padding="5dp"
                 app:hintTextColor="@color/black">
@@ -92,10 +92,11 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/TILEquity"
                 style="@style/TextInputLayout"
-                android:layout_width="170dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
-                android:layout_marginEnd="0dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
                 android:hint="Equity (%)"
                 android:padding="5dp"
                 app:hintTextColor="@color/black">

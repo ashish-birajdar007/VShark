@@ -150,7 +150,7 @@ public class UserProfile {
                 " Last Year Sales : " + lastYearSales + '\n' +
                 " Prior Investor Name : " + priorInvestorName + '\n' +
                 " Prior Investor Investment : " + priorInvestorInvestment + '\n' +
-                " Prior InvestorStake : " + priorInvestorStake + '\n' +
+                " Prior Investor Stake : " + priorInvestorStake + '\n' +
                 " Net Profit : " + netProfit;
     }
 }

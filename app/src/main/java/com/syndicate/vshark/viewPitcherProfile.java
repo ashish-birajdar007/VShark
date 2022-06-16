@@ -26,18 +26,30 @@ public class viewPitcherProfile extends AppCompatActivity {
 
     private TextInputEditText TIETpitcherEmail;
     private Button BTNview;
-    private TextView TVpitcherProfile;
     private FirebaseFirestore PPdatabase;
     private FirebaseAuth PPfAuth;
+
+    private TextView companyName, productDetails, ask, equity, companyValuation, lastYearSales, priorInvestorName, priorInvestorInvestment, priorInvestorStake, netProfit;
+    private void init(){
+        companyName = findViewById(R.id.TVcompanyName);
+        productDetails = findViewById(R.id.TVproductDetails);
+        ask = findViewById(R.id.TVASK);
+        equity = findViewById(R.id.TVEquity);
+        companyValuation = findViewById(R.id.TVvaluation);
+        lastYearSales = findViewById(R.id.TVlastYearSales);
+        priorInvestorName = findViewById(R.id.TVpriorInvestorName);
+        priorInvestorInvestment = findViewById(R.id.TVpriorInvestorInvestment);
+        priorInvestorStake = findViewById(R.id.TVpriorInvestorStake);
+        netProfit = findViewById(R.id.TVnetProfit);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_pitcher_profile);
-
+        init();
         TIETpitcherEmail = findViewById(R.id.idEditPitcherEmail);
         BTNview = findViewById(R.id.idBtnViewProfile);
-        TVpitcherProfile = findViewById(R.id.TVpitcher_profile);
         PPdatabase = FirebaseFirestore.getInstance();
         PPfAuth = FirebaseAuth.getInstance();
 
@@ -69,7 +81,15 @@ public class viewPitcherProfile extends AppCompatActivity {
                             public void onSuccess(DocumentSnapshot documentSnapshot) {
                                 UserProfile userProfile = documentSnapshot.toObject(UserProfile.class);
                                 Toast.makeText(viewPitcherProfile.this, "Pitcher Profile Found", Toast.LENGTH_SHORT).show();
-                                TVpitcherProfile.setText(userProfile.toString());
+                                companyName.setText(userProfile.getCompanyName());
+                                productDetails.setText(userProfile.getProductDetails());
+                                ask.setText(userProfile.getAsk());
+                                equity.setText(userProfile.getEquity());
+                                companyValuation.setText(userProfile.getCompanyValuation());
+                                lastYearSales.setText(userProfile.getLastYearSales());
+                                priorInvestorName.setText(userProfile.getPriorInvestorName());
+                                priorInvestorInvestment.setText(userProfile.getPriorInvestorInvestment());
+                                priorInvestorStake.setText(userProfile.getPriorInvestorStake());
                             }
                         }
                 ).addOnFailureListener(new OnFailureListener() {
