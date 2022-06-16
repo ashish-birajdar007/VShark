@@ -2,7 +2,7 @@ package com.syndicate.vshark;
 
 import androidx.annotation.NonNull;
 
-public class UserProfile {
+public class pitcherProfile {
     private String email = "NA";
     private String companyName = "NA";
     private String productDetails = "NA";
@@ -15,28 +15,11 @@ public class UserProfile {
     private String priorInvestorStake = "NA";
     private String netProfit = "NA";
 
-    public UserProfile() {
+    public pitcherProfile(){
 
     }
 
-    public UserProfile(String Email) {
-        this.email = Email;
-    }
-
-    public UserProfile(String companyName, String productDetails, String ask, String equity, String companyValuation, String lastYearSales, String priorInvestorName, String priorInvestorInvestment, String priorInvestorStake, String netProfit) {
-        this.companyName = companyName;
-        this.productDetails = productDetails;
-        this.ask = ask;
-        this.equity = equity;
-        this.companyValuation = companyValuation;
-        this.lastYearSales = lastYearSales;
-        this.priorInvestorName = priorInvestorName;
-        this.priorInvestorInvestment = priorInvestorInvestment;
-        this.priorInvestorStake = priorInvestorStake;
-        this.netProfit = netProfit;
-    }
-
-    public UserProfile(String email, String companyName, String productDetails, String ask, String equity, String companyValuation, String lastYearSales, String priorInvestorName, String priorInvestorInvestment, String priorInvestorStake, String netProfit) {
+    public pitcherProfile(String email, String companyName, String productDetails, String ask, String equity, String companyValuation, String lastYearSales, String priorInvestorName, String priorInvestorInvestment, String priorInvestorStake, String netProfit) {
         this.email = email;
         this.companyName = companyName;
         this.productDetails = productDetails;
@@ -143,14 +126,14 @@ public class UserProfile {
     public String toString() {
         return
                 "Company Name : " + companyName + '\n' +
-                " Product Details : " + productDetails + '\n' +
-                " Ask : " + ask + '\n' +
-                " Equity : " + equity + '\n' +
-                " Company Valuation : " + companyValuation + '\n' +
-                " Last Year Sales : " + lastYearSales + '\n' +
-                " Prior Investor Name : " + priorInvestorName + '\n' +
-                " Prior Investor Investment : " + priorInvestorInvestment + '\n' +
-                " Prior InvestorStake : " + priorInvestorStake + '\n' +
-                " Net Profit : " + netProfit;
+                        " Product Details : " + productDetails + '\n' +
+                        " Ask : " + ask + '\n' +
+                        " Equity : " + equity + '\n' +
+                        " Company Valuation : " + companyValuation + '\n' +
+                        " Last Year Sales : " + lastYearSales + '\n' +
+                        " Prior Investor Name : " + priorInvestorName + '\n' +
+                        " Prior Investor Investment : " + priorInvestorInvestment + '\n' +
+                        " Prior InvestorStake : " + priorInvestorStake + '\n' +
+                        " Net Profit : " + netProfit;
     }
 }

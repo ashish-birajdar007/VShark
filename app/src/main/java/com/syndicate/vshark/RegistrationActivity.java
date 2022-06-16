@@ -25,6 +25,7 @@ public class RegistrationActivity extends AppCompatActivity {
     private ProgressBar loadingPB;
     private FirebaseAuth mAuth;
     private TextView loginTV;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

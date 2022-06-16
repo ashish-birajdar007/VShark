@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewPitcherProfile"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/idPitcherProfileLinearLayout"
+        android:backgroundTint="@color/yellow_shade"
+        android:background="@color/yellow_shade"
+        android:padding="5dp"
+    >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/idTILPitcherEmail"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:hint="Enter Pitcher's Email Address"
+            style="@style/TextInputLayout"
+            android:padding="5dp"
+            android:textColorHint="@color/blue_shade_1"
+            app:hintTextColor="@color/blue_shade_1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idEditPitcherEmail"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/blue_shade_1"
+                android:textColorHint="@color/blue_shade_1"
+                android:textSize="14sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/idBtnViewProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/custom_button_back"
+            android:text="View Profile"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idPitcherProfileScrollView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingTop="10dp"
+                android:id="@+id/TVpitcher_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Nothing to Show"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
