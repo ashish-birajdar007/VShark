@@ -84,6 +84,13 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.userProfile:
                 startActivity(new Intent(MainActivity.this, UserProfileActivity.class));
+            case R.id.share:
+                Intent ip = new Intent(Intent.ACTION_SEND);
+                ip.setType("text/plain");
+                ip.putExtra(Intent.EXTRA_SUBJECT,"Share vShark");
+                String share_Url="https://vshark220906537.wordpress.com/";
+                ip.putExtra(Intent.EXTRA_TEXT,share_Url);
+                startActivity(Intent.createChooser(ip,"Share Using"));
             default:
                 return super.onOptionsItemSelected(item);
         }
