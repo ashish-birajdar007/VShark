@@ -7,13 +7,12 @@
     android:background="@drawable/signin_screen5"
     tools:context=".LoginActivity">
 
-
     <TextView
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/ubuntu_bold"
-        android:text="Welcome to VShark,"
+        android:text="@string/welcome_to_vshark"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -104,7 +103,7 @@
         app:layout_constraintTop_toBottomOf="@+id/idTILPassword" />
 
     <TextView
-        android:id="@+id/idTVForgotPassword"
+        android:id="@+id/idTVRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Not Registered Yet , Sign Up !"
@@ -127,7 +126,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/idTVRegister"
+        android:id="@+id/idTVForgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"

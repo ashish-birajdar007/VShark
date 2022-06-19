@@ -24,6 +24,7 @@
             android:textColorHint="@color/black"
             android:foregroundGravity="center_horizontal"
             android:text="Company Profile"
+            android:fontFamily="@font/ubuntu_bold"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -55,9 +56,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:hint="Product Details"
-            android:padding="5dp"
-            app:hintTextColor="@color/black"
-            android:textColorHint="@color/black">
+            android:padding="5dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/product_details"
@@ -65,7 +64,6 @@
                 android:layout_height="80dp"
                 android:inputType="textMultiLine"
                 android:textColor="@color/black"
-                android:textColorHint="@color/black"
                 android:textSize="18sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -83,8 +81,7 @@
                 android:layout_weight="1"
                 android:hint="ASK (Lakh Rs)"
                 android:padding="5dp"
-                app:hintTextColor="@color/black"
-                android:textColorHint="@color/black">
+                app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/ask"
@@ -106,8 +103,7 @@
                 android:layout_weight="1"
                 android:hint="Equity (%)"
                 android:padding="5dp"
-                app:hintTextColor="@color/black"
-                android:textColorHint="@color/black">
+                app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/equity"
@@ -129,8 +125,7 @@
             android:layout_marginEnd="20dp"
             android:hint="Company Valuation (Lakh Rs)"
             android:padding="5dp"
-            app:hintTextColor="@color/black"
-            android:textColorHint="@color/black">
+            app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/company_valuation"
@@ -151,8 +146,7 @@
             android:layout_marginEnd="20dp"
             android:hint="Company Last Year Sales (Lakh Rs)"
             android:padding="5dp"
-            app:hintTextColor="@color/black"
-            android:textColorHint="@color/black">
+            app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/last_year_sales"
@@ -193,8 +187,7 @@
             android:layout_marginEnd="20dp"
             android:hint="Prior Investor Investment (Lakh Rs)"
             android:padding="5dp"
-            app:hintTextColor="@color/black"
-            android:textColorHint="@color/black">
+            app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/prior_investor_investment"
@@ -215,8 +208,7 @@
             android:layout_marginEnd="20dp"
             android:hint="Prior Investor Stake (%)"
             android:padding="5dp"
-            app:hintTextColor="@color/black"
-            android:textColorHint="@color/black">
+            app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/prior_investor_stake"
@@ -237,8 +229,7 @@
             android:layout_marginEnd="20dp"
             android:hint="Net Profit (Lakh Rs)"
             android:padding="5dp"
-            app:hintTextColor="@color/black"
-            android:textColorHint="@color/black">
+            app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/net_profit"

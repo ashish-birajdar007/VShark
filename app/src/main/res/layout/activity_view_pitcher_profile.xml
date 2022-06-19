@@ -14,7 +14,7 @@
         android:orientation="horizontal"
         android:id="@+id/idPitcherProfileLinearLayout"
         android:backgroundTint="@color/white"
-        android:background="@color/yellow_shade"
+        android:background="@drawable/custom_round_back"
         android:padding="5dp"
     >
         <com.google.android.material.textfield.TextInputLayout
@@ -84,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="5dp"
-                android:background="@color/yellow_shade"
+                android:background="@drawable/custom_round_back"
                 android:layout_margin="5dp"
                 >
                 <TextView
@@ -111,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="5dp"
-                android:background="@color/yellow_shade"
+                android:background="@drawable/custom_round_back"
                 android:layout_margin="5dp"
                 >
                 <TextView
@@ -146,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="5dp"
-                android:background="@color/yellow_shade"
+                android:background="@drawable/custom_round_back"
                 android:layout_margin="5dp"
                 >
                 <TextView
@@ -173,7 +173,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="5dp"
-                android:background="@color/yellow_shade"
+                android:background="@drawable/custom_round_back"
                 android:layout_margin="5dp"
                 >
                 <TextView
@@ -201,7 +201,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="5dp"
-                android:background="@color/yellow_shade"
+                android:background="@drawable/custom_round_back"
                 android:layout_margin="5dp"
                 >
                 <TextView
@@ -228,7 +228,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="5dp"
-                android:background="@color/yellow_shade"
+                android:background="@drawable/custom_round_back"
                 android:layout_margin="5dp"
                 >
                 <TextView
@@ -256,7 +256,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="5dp"
-                android:background="@color/yellow_shade"
+                android:background="@drawable/custom_round_back"
                 android:layout_margin="5dp"
                 >
                 <TextView
@@ -283,7 +283,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="10dp"
-                android:background="@color/yellow_shade"
+                android:background="@drawable/custom_round_back"
                 android:layout_margin="5dp"
                 >
                 <TextView
@@ -311,7 +311,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="10dp"
-                android:background="@color/yellow_shade"
+                android:background="@drawable/custom_round_back"
                 android:layout_margin="5dp"
                 >
                 <TextView
@@ -338,7 +338,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="5dp"
-                android:background="@color/yellow_shade"
+                android:background="@drawable/custom_round_back"
                 android:layout_margin="5dp"
                 >
                 <TextView

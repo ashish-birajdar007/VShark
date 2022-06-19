@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">VShark</string>
+    <string name="welcome_to_vshark">Welcome to vShark,</string>
 </resources>

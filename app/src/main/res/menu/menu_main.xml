@@ -8,11 +8,6 @@
         android:title="View My Company Profile"/>
     <item android:id="@+id/viewPitcherProfile"
         android:title="View Pitcher Profile"/>
-    <item
-        android:id="@+id/share"
-        android:title="Share"
-        android:icon="@drawable/ic_share"
-        app:showAsAction="always"/>
     <item android:id="@+id/idLogOut"
         android:title="Log Out"/>
 </menu>
