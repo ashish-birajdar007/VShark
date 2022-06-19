@@ -1,6 +1,7 @@
 package com.syndicate.vshark;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,6 +14,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.giphy.sdk.ui.themes.Theme;
 import com.google.firebase.auth.FirebaseAuth;
 
 import org.jitsi.meet.sdk.JitsiMeet;
