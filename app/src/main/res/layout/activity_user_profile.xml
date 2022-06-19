@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="5dp"
-            android:background="@color/blue_shade_1"
+            android:background="@color/yellow_shade"
             android:layout_margin="5dp"
             >
             <TextView
@@ -43,7 +43,7 @@
                 android:textSize="25dp"
                 android:text="Company Name : "
                 android:layout_weight="1"
-                android:textColor="@color/yellow_shade"
+                android:textColor="@color/dark_gray"
                 />
             <TextView
                 android:id="@+id/upTVcompanyName"
@@ -52,7 +52,7 @@
                 android:textSize="25dp"
                 android:text="NA"
                 android:layout_weight="1"
-                android:textColor="@color/yellow_shade"
+                android:textColor="@color/black"
                 />
         </LinearLayout>
 
@@ -61,7 +61,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="5dp"
-            android:background="@color/teal_200"
+            android:background="@color/yellow_shade"
             android:layout_margin="5dp"
             >
             <TextView
@@ -69,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="25dp"
                 android:text="Product Details : "
-                android:textColor="@color/white"
+                android:textColor="@color/dark_gray"
                 />
             <ScrollView
                 android:layout_width="match_parent"
@@ -85,7 +85,7 @@
                         android:inputType="textMultiLine"
                         android:textSize="25dp"
                         android:text="NA"
-                        android:textColor="@color/blue_shade_2"
+                        android:textColor="@color/black"
                         />
                 </LinearLayout>
             </ScrollView>
@@ -96,7 +96,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="5dp"
-            android:background="@color/blue_shade_1"
+            android:background="@color/yellow_shade"
             android:layout_margin="5dp"
             >
             <TextView
@@ -105,7 +105,7 @@
                 android:textSize="25dp"
                 android:text="ASK (Lakh Rs) : "
                 android:layout_weight="1"
-                android:textColor="@color/yellow_shade"
+                android:textColor="@color/dark_gray"
                 />
             <TextView
                 android:id="@+id/upTVASK"
@@ -114,7 +114,7 @@
                 android:textSize="25dp"
                 android:text="NA"
                 android:layout_weight="1"
-                android:textColor="@color/yellow_shade"
+                android:textColor="@color/black"
                 />
         </LinearLayout>
 
@@ -123,7 +123,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="5dp"
-            android:background="@color/teal_200"
+            android:background="@color/yellow_shade"
             android:layout_margin="5dp"
             >
             <TextView
@@ -132,7 +132,7 @@
                 android:textSize="25dp"
                 android:text="Equity % : "
                 android:layout_weight="1"
-                android:textColor="@color/white"
+                android:textColor="@color/dark_gray"
                 />
             <TextView
                 android:id="@+id/upTVEquity"
@@ -142,7 +142,7 @@
                 android:textSize="25dp"
                 android:layout_weight="1"
                 android:text="NA"
-                android:textColor="@color/blue_shade_2"
+                android:textColor="@color/black"
                 />
         </LinearLayout>
 
@@ -151,7 +151,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="5dp"
-            android:background="@color/blue_shade_1"
+            android:background="@color/yellow_shade"
             android:layout_margin="5dp"
             >
             <TextView
@@ -160,7 +160,7 @@
                 android:textSize="25dp"
                 android:text="Company Valuation : "
                 android:layout_weight="0.5"
-                android:textColor="@color/yellow_shade"
+                android:textColor="@color/dark_gray"
                 />
             <TextView
                 android:id="@+id/upTVvaluation"
@@ -169,7 +169,7 @@
                 android:textSize="25dp"
                 android:text="NA"
                 android:layout_weight="1"
-                android:textColor="@color/yellow_shade"
+                android:textColor="@color/black"
                 />
         </LinearLayout>
 
@@ -178,7 +178,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="5dp"
-            android:background="@color/teal_200"
+            android:background="@color/yellow_shade"
             android:layout_margin="5dp"
             >
             <TextView
@@ -187,7 +187,7 @@
                 android:textSize="25dp"
                 android:text="Last Year Sales (Lakh Rs) : "
                 android:layout_weight="1"
-                android:textColor="@color/white"
+                android:textColor="@color/dark_gray"
                 />
             <TextView
                 android:id="@+id/upTVlastYearSales"
@@ -197,7 +197,7 @@
                 android:textSize="25dp"
                 android:layout_weight="1"
                 android:text="NA"
-                android:textColor="@color/blue_shade_2"
+                android:textColor="@color/black"
                 />
         </LinearLayout>
 
@@ -206,7 +206,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="5dp"
-            android:background="@color/blue_shade_1"
+            android:background="@color/yellow_shade"
             android:layout_margin="5dp"
             >
             <TextView
@@ -215,7 +215,7 @@
                 android:textSize="25dp"
                 android:text="Prior Investor : "
                 android:layout_weight="1"
-                android:textColor="@color/yellow_shade"
+                android:textColor="@color/dark_gray"
                 />
             <TextView
                 android:id="@+id/upTVpriorInvestorName"
@@ -224,7 +224,7 @@
                 android:textSize="25dp"
                 android:text="NA"
                 android:layout_weight="1"
-                android:textColor="@color/yellow_shade"
+                android:textColor="@color/black"
                 />
         </LinearLayout>
 
@@ -233,7 +233,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="10dp"
-            android:background="@color/teal_200"
+            android:background="@color/yellow_shade"
             android:layout_margin="5dp"
             >
             <TextView
@@ -242,7 +242,7 @@
                 android:textSize="20dp"
                 android:text="Prior Investor Investment (Lakh Rs) : "
                 android:layout_weight="0.6"
-                android:textColor="@color/white"
+                android:textColor="@color/dark_gray"
                 />
             <TextView
                 android:id="@+id/upTVpriorInvestorInvestment"
@@ -252,7 +252,7 @@
                 android:textSize="25dp"
                 android:layout_weight="1"
                 android:text="NA"
-                android:textColor="@color/blue_shade_2"
+                android:textColor="@color/black"
                 />
         </LinearLayout>
 
@@ -261,7 +261,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="10dp"
-            android:background="@color/blue_shade_1"
+            android:background="@color/yellow_shade"
             android:layout_margin="5dp"
             >
             <TextView
@@ -270,7 +270,7 @@
                 android:textSize="20dp"
                 android:text="Prior Investor Stake %: "
                 android:layout_weight="0.5"
-                android:textColor="@color/yellow_shade"
+                android:textColor="@color/dark_gray"
                 />
             <TextView
                 android:id="@+id/upTVpriorInvestorStake"
@@ -279,7 +279,7 @@
                 android:textSize="25dp"
                 android:text="NA"
                 android:layout_weight="1"
-                android:textColor="@color/yellow_shade"
+                android:textColor="@color/black"
                 />
         </LinearLayout>
 
@@ -288,7 +288,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="5dp"
-            android:background="@color/teal_200"
+            android:background="@color/yellow_shade"
             android:layout_margin="5dp"
             >
             <TextView
@@ -297,7 +297,7 @@
                 android:textSize="25dp"
                 android:text="Net Profit (Lakh Rs) : "
                 android:layout_weight="1"
-                android:textColor="@color/white"
+                android:textColor="@color/dark_gray"
                 />
             <TextView
                 android:id="@+id/upTVnetProfit"
@@ -307,7 +307,7 @@
                 android:textSize="25dp"
                 android:layout_weight="1"
                 android:text="NA"
-                android:textColor="@color/blue_shade_2"
+                android:textColor="@color/black"
                 />
         </LinearLayout>
     </LinearLayout>

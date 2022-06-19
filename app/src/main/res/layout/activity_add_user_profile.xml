@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:scrollbarStyle="insideInset"
     tools:context=".AddUserProfileActivity"
+    android:background="@color/white"
     tools:ignore="SpeakableTextPresentCheck">
 
     <LinearLayout
@@ -20,6 +21,7 @@
             android:gravity="center"
             android:layout_margin="20dp"
             android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:foregroundGravity="center_horizontal"
             android:text="Company Profile"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
@@ -41,6 +43,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="text"
                 android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 android:textSize="18sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -53,7 +56,8 @@
             android:layout_marginEnd="20dp"
             android:hint="Product Details"
             android:padding="5dp"
-            app:hintTextColor="@color/black">
+            app:hintTextColor="@color/black"
+            android:textColorHint="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/product_details"
@@ -61,6 +65,7 @@
                 android:layout_height="80dp"
                 android:inputType="textMultiLine"
                 android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 android:textSize="18sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -78,7 +83,8 @@
                 android:layout_weight="1"
                 android:hint="ASK (Lakh Rs)"
                 android:padding="5dp"
-                app:hintTextColor="@color/black">
+                app:hintTextColor="@color/black"
+                android:textColorHint="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/ask"
@@ -86,7 +92,8 @@
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
                     android:textColor="@color/black"
-                    android:textSize="17sp" />
+                    android:textSize="17sp"
+                    android:textColorHint="@color/black"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -99,7 +106,8 @@
                 android:layout_weight="1"
                 android:hint="Equity (%)"
                 android:padding="5dp"
-                app:hintTextColor="@color/black">
+                app:hintTextColor="@color/black"
+                android:textColorHint="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/equity"
@@ -121,7 +129,8 @@
             android:layout_marginEnd="20dp"
             android:hint="Company Valuation (Lakh Rs)"
             android:padding="5dp"
-            app:hintTextColor="@color/black">
+            app:hintTextColor="@color/black"
+            android:textColorHint="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/company_valuation"
@@ -129,6 +138,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 android:textSize="18sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -141,7 +151,8 @@
             android:layout_marginEnd="20dp"
             android:hint="Company Last Year Sales (Lakh Rs)"
             android:padding="5dp"
-            app:hintTextColor="@color/black">
+            app:hintTextColor="@color/black"
+            android:textColorHint="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/last_year_sales"
@@ -169,6 +180,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="text"
                 android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 android:textSize="18sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -181,7 +193,8 @@
             android:layout_marginEnd="20dp"
             android:hint="Prior Investor Investment (Lakh Rs)"
             android:padding="5dp"
-            app:hintTextColor="@color/black">
+            app:hintTextColor="@color/black"
+            android:textColorHint="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/prior_investor_investment"
@@ -189,6 +202,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 android:textSize="18sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -201,7 +215,8 @@
             android:layout_marginEnd="20dp"
             android:hint="Prior Investor Stake (%)"
             android:padding="5dp"
-            app:hintTextColor="@color/black">
+            app:hintTextColor="@color/black"
+            android:textColorHint="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/prior_investor_stake"
@@ -209,6 +224,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 android:textSize="18sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -221,7 +237,8 @@
             android:layout_marginEnd="20dp"
             android:hint="Net Profit (Lakh Rs)"
             android:padding="5dp"
-            app:hintTextColor="@color/black">
+            app:hintTextColor="@color/black"
+            android:textColorHint="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/net_profit"
@@ -229,6 +246,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 android:textSize="18sp" />
         </com.google.android.material.textfield.TextInputLayout>
 

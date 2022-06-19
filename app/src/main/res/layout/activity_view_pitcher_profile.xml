@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:id="@+id/idPitcherProfileLinearLayout"
-        android:backgroundTint="@color/yellow_shade"
+        android:backgroundTint="@color/white"
         android:background="@color/yellow_shade"
         android:padding="5dp"
     >
@@ -27,18 +27,18 @@
             android:hint="Enter Pitcher's Email Address"
             style="@style/TextInputLayout"
             android:padding="5dp"
-            android:textColorHint="@color/blue_shade_1"
-            app:hintTextColor="@color/blue_shade_1">
+            android:textColorHint="@color/dark_gray"
+            app:hintTextColor="@color/dark_gray">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/idEditPitcherEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/idEditPitcherEmail"
                 android:importantForAutofill="no"
                 android:inputType="textEmailAddress"
-                android:textColor="@color/blue_shade_1"
-                android:textColorHint="@color/blue_shade_1"
-                android:textSize="14sp"/>
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/dark_gray"
+                android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
@@ -84,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="5dp"
-                android:background="@color/blue_shade_1"
+                android:background="@color/yellow_shade"
                 android:layout_margin="5dp"
                 >
                 <TextView
@@ -93,7 +93,7 @@
                     android:textSize="25dp"
                     android:text="Company Name : "
                     android:layout_weight="1"
-                    android:textColor="@color/yellow_shade"
+                    android:textColor="@color/dark_gray"
                     />
                 <TextView
                     android:id="@+id/TVcompanyName"
@@ -102,7 +102,7 @@
                     android:textSize="25dp"
                     android:text="NA"
                     android:layout_weight="1"
-                    android:textColor="@color/yellow_shade"
+                    android:textColor="@color/black"
                     />
             </LinearLayout>
 
@@ -111,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="5dp"
-                android:background="@color/teal_200"
+                android:background="@color/yellow_shade"
                 android:layout_margin="5dp"
                 >
                 <TextView
@@ -119,7 +119,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="25dp"
                     android:text="Product Details : "
-                    android:textColor="@color/white"
+                    android:textColor="@color/dark_gray"
                     />
                 <ScrollView
                     android:layout_width="match_parent"
@@ -135,7 +135,7 @@
                             android:inputType="textMultiLine"
                             android:textSize="25dp"
                             android:text="NA"
-                            android:textColor="@color/blue_shade_2"
+                            android:textColor="@color/black"
                             />
                     </LinearLayout>
                 </ScrollView>
@@ -146,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="5dp"
-                android:background="@color/blue_shade_1"
+                android:background="@color/yellow_shade"
                 android:layout_margin="5dp"
                 >
                 <TextView
@@ -155,7 +155,7 @@
                     android:textSize="25dp"
                     android:text="ASK (Lakh Rs) : "
                     android:layout_weight="1"
-                    android:textColor="@color/yellow_shade"
+                    android:textColor="@color/dark_gray"
                     />
                 <TextView
                     android:id="@+id/TVASK"
@@ -164,7 +164,7 @@
                     android:textSize="25dp"
                     android:text="NA"
                     android:layout_weight="1"
-                    android:textColor="@color/yellow_shade"
+                    android:textColor="@color/black"
                     />
             </LinearLayout>
 
@@ -173,7 +173,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="5dp"
-                android:background="@color/teal_200"
+                android:background="@color/yellow_shade"
                 android:layout_margin="5dp"
                 >
                 <TextView
@@ -182,7 +182,7 @@
                     android:textSize="25dp"
                     android:text="Equity % : "
                     android:layout_weight="1"
-                    android:textColor="@color/white"
+                    android:textColor="@color/dark_gray"
                     />
                 <TextView
                     android:id="@+id/TVEquity"
@@ -192,7 +192,7 @@
                     android:textSize="25dp"
                     android:layout_weight="1"
                     android:text="NA"
-                    android:textColor="@color/blue_shade_2"
+                    android:textColor="@color/black"
                     />
             </LinearLayout>
 
@@ -201,7 +201,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="5dp"
-                android:background="@color/blue_shade_1"
+                android:background="@color/yellow_shade"
                 android:layout_margin="5dp"
                 >
                 <TextView
@@ -210,7 +210,7 @@
                     android:textSize="25dp"
                     android:text="Company Valuation : "
                     android:layout_weight="0.5"
-                    android:textColor="@color/yellow_shade"
+                    android:textColor="@color/dark_gray"
                     />
                 <TextView
                     android:id="@+id/TVvaluation"
@@ -219,7 +219,7 @@
                     android:textSize="25dp"
                     android:text="NA"
                     android:layout_weight="1"
-                    android:textColor="@color/yellow_shade"
+                    android:textColor="@color/black"
                     />
             </LinearLayout>
 
@@ -228,7 +228,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="5dp"
-                android:background="@color/teal_200"
+                android:background="@color/yellow_shade"
                 android:layout_margin="5dp"
                 >
                 <TextView
@@ -237,7 +237,7 @@
                     android:textSize="25dp"
                     android:text="Last Year Sales (Lakh Rs) : "
                     android:layout_weight="1"
-                    android:textColor="@color/white"
+                    android:textColor="@color/dark_gray"
                     />
                 <TextView
                     android:id="@+id/TVlastYearSales"
@@ -247,7 +247,7 @@
                     android:textSize="25dp"
                     android:layout_weight="1"
                     android:text="NA"
-                    android:textColor="@color/blue_shade_2"
+                    android:textColor="@color/black"
                     />
             </LinearLayout>
 
@@ -256,7 +256,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="5dp"
-                android:background="@color/blue_shade_1"
+                android:background="@color/yellow_shade"
                 android:layout_margin="5dp"
                 >
                 <TextView
@@ -265,7 +265,7 @@
                     android:textSize="25dp"
                     android:text="Prior Investor : "
                     android:layout_weight="1"
-                    android:textColor="@color/yellow_shade"
+                    android:textColor="@color/dark_gray"
                     />
                 <TextView
                     android:id="@+id/TVpriorInvestorName"
@@ -274,7 +274,7 @@
                     android:textSize="25dp"
                     android:text="NA"
                     android:layout_weight="1"
-                    android:textColor="@color/yellow_shade"
+                    android:textColor="@color/black"
                     />
             </LinearLayout>
 
@@ -283,7 +283,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="10dp"
-                android:background="@color/teal_200"
+                android:background="@color/yellow_shade"
                 android:layout_margin="5dp"
                 >
                 <TextView
@@ -292,7 +292,7 @@
                     android:textSize="20dp"
                     android:text="Prior Investor Investment (Lakh Rs) : "
                     android:layout_weight="0.6"
-                    android:textColor="@color/white"
+                    android:textColor="@color/dark_gray"
                     />
                 <TextView
                     android:id="@+id/TVpriorInvestorInvestment"
@@ -302,7 +302,7 @@
                     android:textSize="25dp"
                     android:layout_weight="1"
                     android:text="NA"
-                    android:textColor="@color/blue_shade_2"
+                    android:textColor="@color/black"
                     />
             </LinearLayout>
 
@@ -311,7 +311,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="10dp"
-                android:background="@color/blue_shade_1"
+                android:background="@color/yellow_shade"
                 android:layout_margin="5dp"
                 >
                 <TextView
@@ -320,7 +320,7 @@
                     android:textSize="20dp"
                     android:text="Prior Investor Stake %: "
                     android:layout_weight="0.5"
-                    android:textColor="@color/yellow_shade"
+                    android:textColor="@color/dark_gray"
                     />
                 <TextView
                     android:id="@+id/TVpriorInvestorStake"
@@ -329,7 +329,7 @@
                     android:textSize="25dp"
                     android:text="NA"
                     android:layout_weight="1"
-                    android:textColor="@color/yellow_shade"
+                    android:textColor="@color/black"
                     />
             </LinearLayout>
 
@@ -338,7 +338,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="5dp"
-                android:background="@color/teal_200"
+                android:background="@color/yellow_shade"
                 android:layout_margin="5dp"
                 >
                 <TextView
@@ -347,7 +347,7 @@
                     android:textSize="25dp"
                     android:text="Net Profit (Lakh Rs) : "
                     android:layout_weight="1"
-                    android:textColor="@color/white"
+                    android:textColor="@color/dark_gray"
                     />
                 <TextView
                     android:id="@+id/TVnetProfit"
@@ -357,7 +357,7 @@
                     android:textSize="25dp"
                     android:layout_weight="1"
                     android:text="NA"
-                    android:textColor="@color/blue_shade_2"
+                    android:textColor="@color/black"
                     />
             </LinearLayout>
         </LinearLayout>
