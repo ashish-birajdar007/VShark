@@ -148,7 +148,6 @@ public class CreateMeetActivity extends AppCompatActivity {
         sendIntent.setAction(Intent.ACTION_SEND);
         sendIntent.putExtra(Intent.EXTRA_TEXT, "Join Meeting with Your Shark at vShark App\nJoin With following code\n"+code);
         sendIntent.setType("text/plain");
-
         Intent shareIntent = Intent.createChooser(sendIntent, "Share Notes");
         startActivity(shareIntent);
     }
