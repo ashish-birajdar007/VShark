@@ -10,34 +10,37 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        tools:replace="android:label"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.VShark" >
+        android:theme="@style/Theme.VShark"
+        tools:replace="android:label">
+        <activity
+            android:name=".AboutUsActivity"
+            android:exported="false" />
         <activity
             android:name=".ForgotPassword"
             android:exported="false"
-            android:theme="@style/Theme.VShark"/>
+            android:theme="@style/Theme.VShark" />
         <activity
             android:name=".viewPitcherProfile"
             android:exported="false"
-            android:theme="@style/Theme.VShark"/>
+            android:theme="@style/Theme.VShark" />
         <activity
             android:name=".UserProfileActivity"
             android:exported="false"
-            android:theme="@style/Theme.VShark"/>
+            android:theme="@style/Theme.VShark" />
         <activity
             android:name=".AddUserProfileActivity"
             android:exported="false"
-            android:theme="@style/Theme.VShark"/>
+            android:theme="@style/Theme.VShark" />
         <activity
             android:name=".CreateMeetActivity"
             android:exported="true"
-            android:theme="@style/Theme.VShark"/>
+            android:theme="@style/Theme.VShark" />
         <activity
             android:name=".RegistrationActivity"
             android:exported="false"
-            android:theme="@style/Theme.VShark"/>
+            android:theme="@style/Theme.VShark" />
         <activity
             android:name=".LoginActivity"
             android:exported="true"
@@ -51,7 +54,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.VShark"/>
+            android:theme="@style/Theme.VShark" />
 
         <meta-data
             android:name="preloaded_fonts"

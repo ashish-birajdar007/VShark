@@ -8,6 +8,9 @@
         android:title="View My Company Profile"/>
     <item android:id="@+id/viewPitcherProfile"
         android:title="View Pitcher Profile"/>
+    <item android:id="@+id/aboutus"
+        android:title="About Us"/>
     <item android:id="@+id/idLogOut"
         android:title="Log Out"/>
+
 </menu>

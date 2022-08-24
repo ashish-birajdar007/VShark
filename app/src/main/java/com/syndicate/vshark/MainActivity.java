@@ -113,6 +113,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.viewPitcherProfile:
                 startActivity(new Intent(MainActivity.this, viewPitcherProfile.class));
                 break;
+            case R.id.aboutus:
+                startActivity(new Intent(MainActivity.this, AboutUsActivity.class));
+                break;
         }
     }
 

@@ -130,6 +130,9 @@ public class CreateMeetActivity extends AppCompatActivity {
             case R.id.viewPitcherProfile:
                 startActivity(new Intent(CreateMeetActivity.this, viewPitcherProfile.class));
                 break;
+            case R.id.aboutus:
+                startActivity(new Intent(CreateMeetActivity.this, AboutUsActivity.class));
+                break;
         }
     }
 
